@@ -1,0 +1,11 @@
+# mongo commands
+
+show dbs		-- it will display the database.
+use database1		-- it will use the database1, if not exist it will create the new database as database1.
+show collections		-- it will display the tables inside database1, return empty is there is no tables
+db.table_name.insert({"EmpId":2023, "EmpName":"Dhairya"})		-- it will create new table by the name of table_name if not exist and insert a record in it.
+db.table_name.find({})		-- empty argument will display all the records inside the table_name
+db.table_name.find({}).pretty()		-- it will give a structured view for the result set
+db.table_name.remove({"EmpId":2023})		-- it will delete the record with the EmpId 2023 from table_name
+db.table_name.remove({})		-- it will remove all the elements from the table_name
+db.table_name.insert({})		-- it will insert the row.
